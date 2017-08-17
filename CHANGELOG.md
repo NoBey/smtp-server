@@ -1,5 +1,30 @@
 # Changelog
 
+## v3.1.0 2017-08-16
+
+  * Added new server option `needsUpgrade` to upgrade sockets to TLS immediately after connection is established. Works with secure: true
+
+## v3.0.0 2017-04-06
+
+  * Reverted license back to MIT
+
+## v2.0.3 2017-02-17
+
+  * Expose `secure` state in session
+
+## v2.0.2 2017-02-17
+
+  * Fixad a bug where `server.onConnect(err)` did not close the connection
+
+## v2.0.1 2017-02-04
+
+  * Fixad a bug where `server.on('connect', data)` had missing `data`
+
+## v2.0.0 2017-02-04
+
+  * Changed license from MIT to EUPL-v1.1
+  * Rewrite to use ES6, this means at least Node.js v6.0.0 is required to use smtp-server
+
 ## v1.16.1 2016-10-17
 
   * Allowed rewriting `connect` method
